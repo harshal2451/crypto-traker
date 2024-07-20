@@ -45,15 +45,12 @@ This project is a Crypto Tracker application with a frontend built using Next.js
 ### Frontend
 
 1. **Navigate to the frontend directory:**
-
     cd ../crypto-tracker-fe
 
 
 2. **Ensure you are using Node.js version 18.17.0 or greater:**
-
     node -v
     
-
     If you are not using the correct version, consider using [nvm](https://github.com/nvm-sh/nvm) to install and manage Node.js versions.
 
     nvm install 18.17.0
@@ -61,22 +58,14 @@ This project is a Crypto Tracker application with a frontend built using Next.js
   
 
 3. **Install dependencies:**
-
-    ```bash
     npm install
-    ```
 
 4. **Create a `.env.local` file in the root of the `frontend` directory and add the following environment variable:**
-
-    NEXT_PUBLIC_API_URL=http://localhost:5000
-
-
-    Replace `http://localhost:5000` with the actual URL of your backend API if it's different.
+    NEXT_PUBLIC_API_URL=http://localhost:3000
 
 5. **Start the development server:**
     npm run dev
   
-
 6. **Open your browser and navigate to:**
     http://localhost:3001
 
