@@ -27,7 +27,7 @@ export default function Home() {
       socketManager.disconnect();
     };
 
-  }, []);
+  }, [dispatch]);
 
   // fetched crypto data based on crypto selection
   useEffect(() => {
@@ -58,7 +58,7 @@ export default function Home() {
           socket.off('cryptoData');
         };
     }
-  }, [selectedOption]);
+  }, [dispatch, selectedOption]);
 
   /**
    * Open the modal 
