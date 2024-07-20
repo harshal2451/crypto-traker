@@ -91,6 +91,7 @@ const cryptoSlice = createSlice({
             state.selectedOption = state.tempSelectedOption;  
           }else{
             state.selectedOption = cryptoOptions[0];
+            state.tempSelectedOption = cryptoOptions[0];
           }
         }
       })

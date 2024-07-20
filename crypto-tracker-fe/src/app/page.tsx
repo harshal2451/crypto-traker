@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import CryptoTable from '../components/CryptoTable';
 import { useSelector } from 'react-redux';
 import { AppDispatch, RootState } from '../store';
-import { BE_URL, fetchCryptoCurrencies, fetchCryptoData, setCryptoData, setIsModalVisible, setSelectedOption } from '../store/cryptoSlice';
+import { BE_URL, fetchCryptoCurrencies, fetchCryptoData, setCryptoData, setIsModalVisible, setSelectedOption, setTempSelectedOption } from '../store/cryptoSlice';
 import CryptoDropdown from '@/components/CryptoDropdown';
 import socketManager from '../utils/socketManager';
 import { Badge, Button, Layout, Modal, Spin } from 'antd';
@@ -81,6 +81,9 @@ export default function Home() {
    * Close the modal
    */
   const handleCancel = () => {
+    if(selectedOption){
+      dispatch(setTempSelectedOption(selectedOption));
+    }
     dispatch(setIsModalVisible(false));
   };
 
