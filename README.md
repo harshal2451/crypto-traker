@@ -6,7 +6,7 @@ Certainly! Here’s the updated README file that specifies Node.js version 18.17
 
 ## Overview
 
-This project is a Crypto Tracker application with a frontend built using Next.js and a backend built using Express and TypeScript. The application displays cryptocurrency details fetched from an API and includes features such as a data table and dropdowns using Ant Design (antd).
+This project is a Crypto Tracker application with a frontend built using Next.js and a backend built using Express and TypeScript. The application displays cryptocurrency details fetched from an API **(Live Coin Watch) ** and includes features such as a data table and dropdowns using Ant Design (antd).
 
 ## Prerequisites
 
@@ -22,10 +22,14 @@ This project is a Crypto Tracker application with a frontend built using Next.js
 
 ### Backend
 
-1. **Navigate to the backend directory:**
+1. **Move to the `master` branch where the project code is located:**
+
+    git checkout master
+
+2. **Navigate to the backend directory:**
     cd crypto-tracker-be
 
-2. **Ensure you are using Node.js version 18.17.0 or greater:**
+3. **Ensure you are using Node.js version 18.17.0 or greater:**
     node -v
 
     If you are not using the correct version, consider using [nvm](https://github.com/nvm-sh/nvm) to install and manage Node.js versions.
@@ -59,16 +63,16 @@ This project is a Crypto Tracker application with a frontend built using Next.js
     nvm use 18.17.0
   
 
-4. **Install dependencies:**
+3. **Install dependencies:**
     npm install
 
-5. **Create a `.env.local` file in the root of the `frontend` directory and add the following environment variable:**
+4. **Create a `.env.local` file in the root of the `frontend` directory and add the following environment variable:**
     NEXT_PUBLIC_API_URL=http://localhost:3000
 
-6. **Start the development server:**
+5. **Start the development server:**
     npm run dev
   
-7. **Open your browser and navigate to:**
+6. **Open your browser and navigate to:**
     http://localhost:3001
 
 ## Scripts
