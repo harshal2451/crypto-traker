@@ -11,7 +11,8 @@ This project is a Crypto Tracker application with a frontend built using Next.js
 ## Prerequisites
 
 - Node.js (version 18.17.0 or greater)
-- npm or yarn
+- MongoDB (installed and running locally
+- npm
 
 ## Project Structure
 
