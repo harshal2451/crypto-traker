@@ -12,6 +12,7 @@ This project is a Crypto Tracker application with a frontend built using Next.js
 
 - Node.js (version 18.17.0 or greater)
 - MongoDB (installed and running locally)
+- nvm ([download link](https://github.com/coreybutler/nvm-windows/releases/tag/1.1.9) 
 - npm
 
 ## Project Structure
